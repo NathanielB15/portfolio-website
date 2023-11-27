@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
+    <link rel="stylesheet" href="databaseStyle.css" />
+    <script src="database.js" type="module"></script>
 </head>
 <body>
     <div id="enterDetails">
         <h1>Leave Feedback</h1>
 
-        <h4>Topic</h4> 
-        <input id="email" type="email" name="email">
+        <h4>Email</h4> 
+        <input id="enterEmail" type="email" name="email">
 
         <h4>Date</h4>
-        <input id="date" type="date" name="date">
+        <input id="enterDate" type="date" name="date">
 
         <h4>Name</h4> 
         <input id="enterName" type="text" name="name"> 
@@ -22,23 +24,6 @@
         <input id="enterDescription" type="text" name="description"> <br><br>
 
         <button id="submit">Submit</button>
-        <button id="reset">Reset</button> <br><br>
-    </div>
-
-    <div id="findDetails">
-        <h1>Search</h1>
-
-        <h4>Keyword</h4>
-        <input id="findMaterial" type="text">
-        <h4>Type:</h4>
-        <input type="radio" id="articles" name="articles" value="Articles">
-        <label for="articles">Articles</label><br>
-        <input type="radio" id="Courses" name="courses" value="Courses">
-        <label for="courses">Courses</label><br><br>
-        <button id="find">Find</button>
-
-        <h3 id="findName" type="text"></h3>
-        <h3 id="findType" type="text"></h3> <br><br>
     </div>
 </body>
 </html>
