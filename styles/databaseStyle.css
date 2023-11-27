@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+body {
+  background: linear-gradient(to right, #e6e2d9, #ddd1af);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.clock {
+  font-size: 4rem;
+  text-shadow: 0.25rem 0.25rem 0.6rem rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 1.5rem;
+  text-align: center;
+  margin-right: 5%;
+}
+
+#seconds {
+  min-width: 5.5rem;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=date], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#enterDetails {
+    border-radius: 5px;
+    background-color: #c4b7a1;
+    padding: 30px;
+    margin-right: 10%;
+}
+
+#enterDescription{
+    height: 200px;
+    width: 600px;
+}
+
+.submit{
+  width: 30%;
+  background-color: #af9d4c;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 70%;
+  }
+
+.submit:hover{
+    background-color: #a09e45;
+}
+
+.icon {
+    cursor: pointer;
+    height: 5rem;
+    padding-bottom: 50rem;
+  }

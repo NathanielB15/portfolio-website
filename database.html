@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
-    <link rel="stylesheet" href="databaseStyle.css" />
-    <script src="database.js" type="module"></script>
+    <link rel="stylesheet" href="styles/databaseStyle.css" />
+    <script src="logic/database.js" type="module" defer></script>
 </head>
 <body>
     <div id="enterDetails">
@@ -23,7 +23,24 @@
         <h4>Description</h4> 
         <input id="enterDescription" type="text" name="description"> <br><br>
 
-        <button id="submit">Submit</button>
+        <button class="submit">Submit</button>
+    </div>
+
+    <div class="clock">
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+        <span id="ampm"></span>
+    </div>
+
+    <div class="backLogo">
+        <img
+            src="./assets/backArrow.png"
+            class="icon"
+            onclick="location.href='./#contact'"
+        />
     </div>
 </body>
 </html>
