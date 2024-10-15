@@ -94,6 +94,7 @@ body {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+  transition: all 1.5s;
 }
 
 html {
@@ -274,14 +275,10 @@ a:after {
 
 section {
   padding-top: 5vh;
-  height: 95vh;
+  height: 85vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
-}
-
-.section-container {
-  display: flex;
 }
 
 /* Profile section styling */
@@ -476,15 +473,22 @@ section {
 }
 
 .arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+  position: fixed; 
+  right: 2rem; 
+  bottom: 2rem; 
+  transform: rotate(180deg); 
+  z-index: 1000; 
+  cursor: pointer; 
+}
+
+.arrow.show {
+  display: block;
 }
 
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: rgb(243, 212, 154);
+  background: rgb(233 211 170);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(3, 3, 3);
@@ -494,7 +498,7 @@ section {
 .details-container-2 {
     padding: 1.5rem;
     flex: 1;
-    background: rgb(243, 212, 154);
+    background: rgb(233 211 170);
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(3, 3, 3);
@@ -503,7 +507,8 @@ section {
 
 .section-container {
   gap: 4rem;
-  height: 80%;
+  height: 70%;
+  display: flex;
 }
 
 .section__pic-container {
@@ -595,7 +600,7 @@ section {
     }
   }
 
-/* Expierence section styling */
+/* Experience section styling */
 
 #experience {
   position: relative;
