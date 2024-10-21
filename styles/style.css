@@ -87,14 +87,14 @@ body {
   opacity: 0;
   filter: blur(7.5px);
   transform: translateX(-100%);
-  transition: all 1.5s;
+  transition: all 1.75s;
 }
 
 .show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-  transition: all 1.5s;
+  transition: all 1.75s;
 }
 
 html {
@@ -344,7 +344,6 @@ section {
   gap: 1rem;
 }
 
-/* */
 
 .prjs-btn-container {
   display: flex;
@@ -352,6 +351,15 @@ section {
   width: fit-content;
   height: fit-content;
   cursor: pointer;
+  float: left;
+}
+
+.demo-btn{
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  float: right;
 }
 
 .btn-icon {
@@ -664,7 +672,9 @@ article .icon {
 .project-btn {
   color: black;
   border-color: rgb(163, 163, 163);
+  float: right;
 }
+
 
 /* Contact section styling */
 
@@ -705,6 +715,71 @@ article .icon {
 .email-icon {
   height: 2.5rem;
 }
+
+/* Scroll to top */
+.testbtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(151, 143, 135);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+  position: fixed;    
+  bottom: 100px;       
+  right: 0.5px;        
+  z-index: 1000;      
+  padding: 10px 20px; 
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.testbtn:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(248, 239, 229);
+  align-items: center;
+  color: #000000;
+}
+
+.testbtn:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.testbtn::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.testbtn:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
+
 
 /* Footer section styling */
 
