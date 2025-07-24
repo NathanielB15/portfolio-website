@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="description" content="Portfolio of Nathaniel Bugeja - Web developer from Malta with 3+ years experience in backend and frontend development.">
+    <meta name="keywords" content="Nathaniel Bugeja, web developer, backend, frontend, PHP, software engineer, Malta">
+    <meta name="author" content="Nathaniel Bugeja">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,14 +16,14 @@
   <body>
     <nav id="desktop-nav">
       <div class="logo">
-        <img src="./assets/logo.png" alt="My Logo" class="logo">
+        <img src="./assets/logo.png" alt="Personal logo" class="logo">
       </div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="layouts/Projects.html">Projects</a></li>
-          <li><a href="layouts/feedback.html">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="layouts\feedback.html">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -35,12 +38,12 @@
           <span></span>
           <span></span>
         </div>
-        <div class="menu-links">
+        <ul class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
+        </ul>
       </div>
       <div class="loader">
         <div class="circle"></div>
@@ -53,9 +56,6 @@
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/profile_img.png" alt="My Profile Picture" />
-        <div class="tooltip">
-          <p>Heyy👋</p>
-        </div>
       </div>
       <hr>
       <div class="section__text">
@@ -74,18 +74,8 @@
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/nathaniel-bugeja-916b42232/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/NathanielB15'"
-          />
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon"onclick="location.href='https://www.linkedin.com/in/nathaniel-bugeja-916b42232/'"/>
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/NathanielB15'"/>
         </div>
       </div>
     </section>
@@ -128,137 +118,146 @@
 
           <div class="text-container">
             <p>
-                I'm a 24-year-old software developer from the beautiful island of Malta. 
-                My dream has always been to work in this industry from a very young age.
-                My passion for software development is matched only by my love for creativity and exploration. 
-                I'm not just a coder; I'm a fun and cheerful explorer of the digital world, always on the lookout for innovative solutions. 
-                When I'm not crafting code, I'm either behind the lens, capturing life's moments through photography, diving into the world of game development or busy being obsessed with football. 
-                With a hunger for learning and a zest for life, I'm excited to share my journey with you and collaborate on exciting projects together!
+                I'm a 24-year-old  &lt;software_developer&gt; from Malta, passionate about building meaningful digital experiences. 
+                I’ve been coding professionally for over 3 years, diving into everything from backend systems to game development and photography.
+                With curiosity and creativity at the core of my work, I’m always eager to collaborate, solve real problems, and keep learning.
             </p>
+            <br>
+            <div class="traits-container">
+              <h3>Traits I Value</h3>
+              <p>Teamwork    ·    Problem Solving    ·   Communication    ·    Adaptability    ·    Curiosity</p>
+            </div>
           </div>
         </div>
       </div>
+      <div class="quick-facts">
+        <ul>
+          <li>🗺 Based in Malta</li>
+          <li>📷 Passionate Photographer</li>
+          <li>🎧 Music Enthusiast</li>
+          <li>⚽ Football Fenatic</li>
+        </ul>
+      </div>
     </section>
 
-    <br><br>
-
     <section class="hidden" id="experience">
-      <hr class="horizontal-hr">
+      <hr class="horizontal-hr" />
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
-
+    
       <div class="experience-details-container">
         <div class="about-containers">
+    
           <div class="details-container-2">
             <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PHP</h3>
-                  <p>Advanced</p>
-                </div>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>PHP</h3><p>Intermediate</p></div>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Moderate</p>
-                </div>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>.NET Core (C#)</h3><p>Advanced</p></div>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Basic</p>
-                </div>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Java</h3><p>Beginner</p></div>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                  <p>Intermediate</p>
-                </div>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Python</h3><p>Beginner</p></div>
               </article>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>JavaScript</h3><p>Beginner</p></div>
+              </article>
+    
             </div>
           </div>
+    
+          <!-- Backend Tools -->
+          <div class="details-container-2">
+            <h2 class="experience-sub-title">Backend Tools & Technologies</h2>
+            <div class="article-container">
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>MySQL</h3><p>Advanced</p></div>
+              </article>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Redis</h3><p>Beginner</p></div>
+              </article>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Elasticsearch</h3><p>Beginner</p></div>
+              </article>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Swagger</h3><p>Advanced</p></div>
+              </article>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Postman</h3><p>Advanced</p></div>
+              </article>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Serilog</h3><p>Intermediate</p></div>
+              </article>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>JWT</h3><p>Intermediate</p></div>
+              </article>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Docker</h3><p>Beginner</p></div>
+              </article>
+    
+            </div>
+          </div>
+    
+          <!-- Frontend Development -->
           <div class="details-container-2">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
-                <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>HTML</h3>
-                      <p>Moderate</p>
-                    </div>
-                  </article>
-                  <article>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Experience icon"
-                      class="icon"
-                    />
-                    <div>
-                      <h3>CSS</h3>
-                      <p>Moderate</p>
-                    </div>
-                  </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Basic</p>
-                </div>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>HTML</h3><p>Intermediate</p></div>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Advanced</p>
-                </div>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>CSS</h3><p>Intermediate</p></div>
               </article>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Angular</h3><p>Beginner</p></div>
+              </article>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Figma</h3><p>Beginner</p></div>
+              </article>
+    
             </div>
           </div>
+    
+          <div class="details-container-2">
+            <h2 class="experience-sub-title">Version Control & Collaboration</h2>
+            <div class="article-container">
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>Git</h3><p>Advanced</p></div>
+              </article>
+    
+              <article><img src="./assets/checkmark.png" alt="" class="icon" />
+                <div><h3>GitHub</h3><p>Advanced</p></div>
+              </article>
+    
+            </div>
+          </div>
+    
         </div>
       </div>
-
-      <!-- <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      /> -->
     </section>
-
-    <br><br>
+    
 
     <section class="hidden" id="projects">
       <hr class="horizontal-hr">
@@ -343,8 +342,6 @@
         </div>
       </div>
     </section>
-    
-    <br><br>
 
     <footer>
       <section class="hidden" id="contact">
@@ -370,9 +367,8 @@
             />
             <p><a href="https://www.instagram.com/nathaniel_bug/">Instagram</a></p>
           </div>
-          <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToTop()"/> -->
         </div>
-        <button class="testbtn">
+        <button class="back_to_top_btn"  onclick="scrollToTop()">
           <svg class="svgIcon" viewBox="0 0 384 512">
             <path
               d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"

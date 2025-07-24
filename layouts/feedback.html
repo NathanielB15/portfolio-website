@@ -3,44 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Clock</title>
-    <link rel="stylesheet" href="styles/feedback.css" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../styles/feedback.css" />
     <script src="logic/database.js" defer></script>
     <script src="logic/timer.js" defer></script>
   </head>
   <body>
-    <div id="enterDetails">
-        <h1>Leave Feedback</h1>
-
-        <h4>Email</h4> 
-        <input id="enterEmail" type="email" name="email">
-
-        <h4>Date</h4>
-        <input id="enterDate" type="date" name="date">
-
-        <h4>Name</h4> 
-        <input id="enterName" type="text" name="name"> 
-
-        <h4>Description</h4> 
-        <input id="enterDescription" type="text" name="description"> <br><br>
-
-        <button class="submit">Submit</button>
+    <button class="backHome" onclick="location.href='/'">Back to Homepage</button>
+  
+    <div id="contactForm">
+      <p> FIND OUT MORE </p>
+      <h1>Contact Me</h1>
+  
+      <h4>First Name</h4>
+      <input id="firstName" type="text" name="firstName" required />
+  
+      <h4>Second Name</h4>
+      <input id="secondName" type="text" name="secondName" required />
+  
+      <h4>Company Name</h4>
+      <input id="companyName" type="text" name="company" />
+  
+      <h4>Phone Number</h4>
+      <input id="phone" type="tel" name="phone" />
+  
+      <h4>Email</h4>
+      <input id="email" type="email" name="email" required />
+  
+      <h4>Message</h4>
+      <textarea id="message" name="message" rows="4" required></textarea>
+  
+      <button class="submit">Submit</button>
     </div>
-    <div class="clock">
-        <span id="hours">00</span>
-        <span>:</span>
-        <span id="minutes">00</span>
-        <span>:</span>
-        <span id="seconds">00</span>
-        <span id="ampm"></span>
-    </div>
-    <div class="backLogo">
-        <img
-            src="./assets/backArrow.png"
-            class="icon"
-            height="70px"
-            onclick="location.href='./#contact'"
-        />
-    </div>
-  </body>
+  </body>  
 </html>

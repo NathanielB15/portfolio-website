@@ -87,14 +87,14 @@ body {
   opacity: 0;
   filter: blur(7.5px);
   transform: translateX(-100%);
-  transition: all 1.75s;
+  transition: all 2s;
 }
 
 .show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
-  transition: all 1.75s;
+  transition: all 2s;
 }
 
 html {
@@ -119,9 +119,10 @@ a,
 /* Desktop Nav styling */
 
 .logo {
-    padding-top: 1rem;
-    width: 150px;
-    height: 150px;
+  font-size: 2rem;
+  padding-top: 1rem;
+  width: 150px;
+  height: 150px;
 }
 
 .logo-hamburger {
@@ -183,15 +184,11 @@ a:after {
   transition-property: width, left;
 }
 
-.logo {
-  font-size: 2rem;
-}
-
 .logo:hover {
   cursor: default;
 }
 
-/* Hamburtger menu styling */
+/* Hamburger menu styling */
 
 #hamburger-nav {
   display: none;
@@ -309,6 +306,7 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  margin-top: 3%;
 }
 
 .section__text__p2 {
@@ -412,7 +410,7 @@ section {
   transform: translate3d(0, 0, 1em);
 }
 
-/* */
+/* Buttons */
 
 .btn {
   font-weight: 600;
@@ -479,6 +477,25 @@ section {
 .about-pic {
   border-radius: 2rem;
 }
+
+.quick-facts ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.quick-facts li {
+  background-color: #fff5e9;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
 
 .arrow {
   position: fixed; 
@@ -582,7 +599,7 @@ section {
     }
     50% {
       transform: translateY(-50%) scaleY(1.2);
-      opacity: 1;
+      opacity: 0.5;
     }
     100% {
       transform: translateY(-100%) scaleY(1);
@@ -717,11 +734,11 @@ article .icon {
 }
 
 /* Scroll to top */
-.testbtn {
+.back_to_top_btn {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: rgb(151, 143, 135);
+  background-color: rgb(123, 118, 113);
   border: none;
   font-weight: 600;
   display: flex;
@@ -729,7 +746,7 @@ article .icon {
   justify-content: center;
   box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.253);
   cursor: pointer;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
   overflow: hidden;
   position: relative;
   position: fixed;    
@@ -741,29 +758,29 @@ article .icon {
 
 .svgIcon {
   width: 12px;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 
 .svgIcon path {
   fill: white;
 }
 
-.testbtn:hover {
+.back_to_top_btn:hover {
   width: 140px;
   border-radius: 50px;
-  transition-duration: 0.3s;
-  background-color: rgb(248, 239, 229);
+  transition-duration: 0.5s;
+  background-color: rgb(123, 118, 113);
   align-items: center;
   color: #000000;
 }
 
-.testbtn:hover .svgIcon {
+.back_to_top_btn:hover .svgIcon {
   /* width: 20px; */
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
   transform: translateY(-200%);
 }
 
-.testbtn::before {
+.back_to_top_btn::before {
   position: absolute;
   bottom: -20px;
   content: "Back to Top";
@@ -772,11 +789,10 @@ article .icon {
   font-size: 0px;
 }
 
-.testbtn:hover::before {
+.back_to_top_btn:hover::before {
   font-size: 13px;
   opacity: 1;
   bottom: unset;
-  /* transform: translateY(-30px); */
   transition-duration: 0.3s;
 }
 
